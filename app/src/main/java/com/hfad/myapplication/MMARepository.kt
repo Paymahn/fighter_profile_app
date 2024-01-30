@@ -6,7 +6,7 @@ import retrofit2.http.Query
 
 class MMARepository {
     suspend fun searchGoogleImages(query: String): List<GoogleImage> {
-        val apiKey = "AIzaSyCwpK5jaB90-JWzMHY-H_JBpYYdvMauqGM"
+        val apiKey = "AIzaSyCwpK5jaB90-JWzMHY-H_JBpYYdvMa"
         val cx = "f397966b03ef344ff"
         val response = googleApiService.searchImages(query, cx, apiKey)
         return response.items
